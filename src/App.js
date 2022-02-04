@@ -15,6 +15,8 @@ function App() {
   const [fetchError, setFetchError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
+  // 第2引数に空の配列を指定すると、ページ読み込み時の一回のみの処理を行うことができる
+  // https://www.youtube.com/watch?v=ivi5fv22Erw 参考
   useEffect(() => {
     const fetchItems = async () => {
       try {
